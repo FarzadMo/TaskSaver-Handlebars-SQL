@@ -1,0 +1,16 @@
+<h1> This is a Task Saver Application: </h1>
+<p> Save the tasks you need to get to later </p>
+
+<ul>
+  {{#each dataObj}}
+    <li>
+        <p> ID: {{id}}  </p>
+        <p> Task: {{task}} </p>
+    </li>
+  {{/each}}
+</ul>
+
+<form action="/" method="POST">
+    <textarea name="task" type= "text"></textarea>
+    <button type="submit"> Submit</button>
+</form>
